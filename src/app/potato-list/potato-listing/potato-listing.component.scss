@@ -1,0 +1,45 @@
+@import '~sass/variables';
+
+.inner {
+  margin: .5em;
+  padding: 1em 0;
+  border-bottom: 1px solid $light-gray;
+  .image-container {
+    width: 240px;
+    background: $dark-gray;
+    > img {
+      max-height: 180px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  > div {
+
+    display: inline-block;
+  }
+  .info-container {
+    width: calc(100% - 240px);
+    float: right;
+    padding: 0 1em;
+  }
+  h4 {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  span {
+    display: block;
+  }
+  a {
+    margin-right: 1em;
+  }
+  @media only screen and (max-width: $display-mobile) {
+    .info-container, .image-container {
+      width: 100%;
+    }
+  }
+  .selectable {
+    cursor: pointer;
+  }
+}

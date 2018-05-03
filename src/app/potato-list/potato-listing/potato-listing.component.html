@@ -1,0 +1,15 @@
+<div class="inner clearfix">
+  <div class="image-container">
+    <img [src]="potato.media.m" class="selectable" (click)="showModal()" alt="User's Image">
+  </div>
+  <div class="info-container">
+    <h4 class="selectable">
+      <a (click)="showModal()">
+        {{potato.title}}
+      </a>
+    </h4>
+    <span class="small">Published, {{potato.date_taken | date:'MMM d, y, h:mm a'}}</span>
+    <a [href]="authorLink"><i class="fas fa-user-circle"></i> {{photoAuthor}}</a>
+    <a [attr.href]="potato.link"><i class="fab fa-flickr"></i> View on Flickr</a>
+  </div>
+</div>

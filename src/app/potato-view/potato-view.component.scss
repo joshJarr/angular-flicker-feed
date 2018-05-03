@@ -1,0 +1,67 @@
+@import '~sass/variables';
+
+//- gross and quick overwrites for the bootstrap modal
+.modal-dialog {
+  max-width: 720px;
+  margin-top: 10%;
+  -webkit-box-shadow: 0px 0px 300px 200px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 300px 200px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 300px 20000px rgba(0,0,0,0.15);
+  .modal-header, .modal-footer {
+    border: none;
+  }
+  .modal-header {
+    background: #eee;
+  }
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    padding: none;
+    > .modal-container {
+      padding: 1em;
+    }
+  }
+  .modal-image {
+    background: $light-gray;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .modal-body {
+    h2 {
+      text-align: center;
+    }
+    .details {
+      text-align: center;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #eee;
+    }
+    .description {
+      padding: 0 3em;
+      line-height: 1.5em;
+    }
+    .pull-right {
+      float: right;
+    }
+  }
+  .clearfix {
+    a {
+      float: right;
+      padding: 3em 1em 0 0;
+    }
+  }
+  .padit {
+    margin: 0 .5em;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    padding: 10px;
+    background: $dark-gray;
+    &[data-tag=potato] {
+      background: $potato-color;
+    }
+  }
+}

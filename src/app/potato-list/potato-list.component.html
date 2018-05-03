@@ -1,0 +1,12 @@
+<div class="inner">
+  <div class="container">
+    <div class="row">
+      <input [(ngModel)]="searchText" placeholder="Search Potatos!">
+      <ul class="list-unstyled">
+        <li class="clearfix" *ngFor="let potato of potatos | searchFilter : searchText">
+          <app-potato-listing [potato]="potato"></app-potato-listing>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

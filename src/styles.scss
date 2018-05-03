@@ -1,0 +1,18 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+// Blur backdrop on modal open
+body {
+  .app-container {
+    filter: blur(0px);
+    transition: filter 100ms linear;
+  }
+
+  &.modal-open .app-container {
+    filter: blur(10px);
+  }
+  // simply throws padding on something
+  .padit {
+    margin: 0 .5em;
+  }
+}
